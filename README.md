@@ -248,6 +248,7 @@ Thought experiment: Why is ArrayList bound to `IModule`?  In this case the java 
 2. `boolean fireThruster(int availablePower)` - this method uses your thrusterModule to thrust forward
 3. `void runExperiment()` - delegate to your experiment module
 4. `void printStatusReports()` - iterate modules and call statusReport("Normal", true)
+5. `String getExperimentSummary()` - delegate and return the summary from the `experimentModule.`
 
 
 # Mission Control (Main.java)
