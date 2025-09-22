@@ -14,6 +14,6 @@ public class SolarGenerator extends AModule implements IPowerGenerator {
 
     @Override
     public int generatePower() {
-        return 10;  // constant power output
+        return 10;
     }
 }

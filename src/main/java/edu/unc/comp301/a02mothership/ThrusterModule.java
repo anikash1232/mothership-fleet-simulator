@@ -6,7 +6,7 @@ public class ThrusterModule extends AModule {
 
     public ThrusterModule() {
         super("ThrusterModule");
-        this.fuel = 100;      // default starting fuel
+        this.fuel = 100;
         this.lastFired = false;
     }
 
