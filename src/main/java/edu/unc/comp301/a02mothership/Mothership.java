@@ -22,6 +22,14 @@ public class Mothership {
         modules.add(experimentModule);
     }
 
+    public Mothership(IPowerGenerator powerGenerator,
+                      ThrusterModule thrusterModule,
+                      ExperimentModule experimentModule,
+                      ShieldModule shieldModule) {
+        this(powerGenerator, thrusterModule, experimentModule);
+        modules.add(shieldModule);
+    }
+
     public int requestPower() {
         return powerGenerator.generatePower();
     }
@@ -44,7 +52,6 @@ public class Mothership {
         return experimentModule.getSummary();
     }
 
-    // Required by assignment
     public boolean createMayhem() {
         return true;
     }
